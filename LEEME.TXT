@@ -1,0 +1,47 @@
+*****************************************************************
+* Proyecto Fin de Carrera: 										*
+*		Estudio de arquitecturas en soft-processors				*
+*		y comparativa de rendimiento y consumo					*
+*		con procesadores comerciales							*
+*																*
+* Autor:	Víctor Nieto Talaván								*
+*																* 
+* Tutores:	David Exposito Singh								*
+*			Oscar Perez Alonso									*
+*****************************************************************
+
+En este DVD se encuentran todos los proyectos software y hardware
+realizados en el proyecto, además de la documentación y resultados
+obtenidos.
+
+La estructura del DVD es la siguiente:
+
+	DVD
+	 |
+	 |-- LEEME.TXT: Este fichero
+	 |
+	 |-- Arquitecturas: Desarrollos hardware
+	 |			|
+	 |			|-- Atlys: Contiene los proyectos de XPS con las distintas implementaciones
+	 |			|		   del procesador MicroBlaze en la placa Digilent Atlys
+	 |			|
+	 |			|-- Nexys3: Contiene los proyectos de XPS con las distintas implementaciones
+	 |						del procesador MicroBlaze en la placa Digilent Nexys3
+	 |						
+	 |
+	 |-- Benchmarks: Desarrollos software, benchmarks Dhrystone, Whetstone, Linpack, 
+	 |			|	 VitiRAM y VitiJumps
+	 |			|
+	 |			|-- FPGA: Contiene los benchmarks implementados para el procesador MicroBlaze
+	 |			|
+	 |			|-- NDS: Contiene los benchmarks implementados para la Nintendo DS (procesador ARM)
+	 |			|
+	 |			|-- PC: Contiene los benchmarks implementados para OpenWatcom y la arquitectura x86,
+	 |			|		el código fuente es directamente compilable bajo GCC
+	 |			|
+	 |			|-- PSP: Contiene los benchmarks implementados para la Sony Playstation Portable (procesador MIPS)
+	 |
+	 |-- Documentación: Contiene la memoria del proyecto en formato PDF, y la presentación realizada del mismo
+	 |					en formato PowerPoint (.pptx)
+	 |
+	 |-- Resultados: Contiene los resultados de rendimiento y consumo separados en dos ficheros Excel (.xlsx)

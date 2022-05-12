@@ -1,0 +1,182 @@
+!SESSION 2012-03-17 19:17:13.306 -----------------------------------------------
+eclipse.buildId=Release 13.3 Build SDK_O.76xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-03-17 19:27:27.968
+!MESSAGE Indexed 'xilkernel_bsp_0' (0 sources, 8 headers) in 0,22 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-03-17 19:28:14.380
+!MESSAGE Indexed 'hello_world_0' (2 sources, 51 headers) in 0,55 sec: 1.392 declarations; 1.197 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-03-17 19:47:00.811
+!MESSAGE Indexed 'dhrystone_2.1' (3 sources, 58 headers) in 1,58 sec: 2.046 declarations; 2.144 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-03-17 19:47:01.934
+!MESSAGE Indexed 'linpack' (2 sources, 58 headers) in 1,11 sec: 2.455 declarations; 3.166 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,07%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-03-17 19:47:02.819
+!MESSAGE Indexed 'whetstone' (2 sources, 55 headers) in 0,44 sec: 2.022 declarations; 2.014 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,10%)
+!SESSION 2012-05-05 21:00:29.762 -----------------------------------------------
+eclipse.buildId=Release 13.3 Build SDK_O.76xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-05-05 21:05:38.141
+!MESSAGE Indexed 'vitijumps' (2 sources, 55 headers) in 3,13 sec: 2.022 declarations; 2.014 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,10%)
+!SESSION 2012-05-06 14:00:12.236 -----------------------------------------------
+eclipse.buildId=Release 13.3 Build SDK_O.76xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-05-06 14:05:41.472
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SourceManager.setSourcePaths(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.model.Target.setSourcePaths(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.setSourceLookupPath(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initializeSourceLookupPath(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initialize(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.<init>(Unknown Source)
+	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(Unknown Source)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1957)
+	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-05-06 14:05:41.524
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.model.RegisterGroup.getRegisterDescriptors(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.CRegisterManager.initialize(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.getRegisterManager(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initializeRegisters(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initialize(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.<init>(Unknown Source)
+	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(Unknown Source)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1957)
+	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-05-06 14:05:41.525
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.getRegisterDescriptors(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.cdi.model.RegisterGroup.getRegisterDescriptors(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.CRegisterManager.initialize(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initializeRegisters(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.initialize(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.<init>(Unknown Source)
+	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(Unknown Source)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1957)
+	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.debug.core 4 1000 2012-05-06 14:05:41.539
+!MESSAGE Internal error logged from CDI Debug: 
+!STACK 1
+org.eclipse.debug.core.DebugException: Error stopping at main.
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.stopAtLocation(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.stopAtSymbol(Unknown Source)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.start(Unknown Source)
+	at org.eclipse.cdt.debug.core.CDIDebugModel$1.run(Unknown Source)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1957)
+	at org.eclipse.cdt.debug.core.CDIDebugModel.newDebugTarget(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Target request failed: {R,T}xThread terminated.
+!SUBENTRY 1 org.eclipse.cdt.debug.core 4 0 2012-05-06 14:05:41.540
+!MESSAGE Error stopping at main.
+!SUBENTRY 2 org.eclipse.cdt.debug.core 4 5010 2012-05-06 14:05:41.540
+!MESSAGE Target request failed: {R,T}xThread terminated.
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-05-06 14:09:55.823
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+java.lang.RuntimeException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.stopRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.terminate(Unknown Source)
+	at org.eclipse.debug.internal.core.commands.TerminateCommand.execute(TerminateCommand.java:30)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:31)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:213)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-05-06 14:10:15.880
+!MESSAGE An internal error occurred during: "Launching vitijumps Debug".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1249)
+	at org.eclipse.swt.widgets.Display.checkDevice(Display.java:736)
+	at org.eclipse.swt.widgets.Display.getActiveShell(Display.java:1437)
+	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1298)
+	at org.eclipse.cdt.debug.ui.CDebugUIPlugin.getActiveWorkbenchWindow(Unknown Source)
+	at org.eclipse.cdt.debug.ui.CDebugUIPlugin.getActiveWorkbenchShell(Unknown Source)
+	at com.xilinx.sdk.debug.ui.internal.statushandler.ErrorStatusHandler$1.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:179)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4584)
+	at com.xilinx.sdk.debug.ui.internal.statushandler.ErrorStatusHandler.handleStatus(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(Unknown Source)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-05-09 18:08:53.665 -----------------------------------------------
+eclipse.buildId=Release 13.3 Build SDK_O.76xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-05-09 18:21:59.980
+!MESSAGE Indexed 'lmbench' (2 sources, 52 headers) in 3,18 sec: 1.430 declarations; 1.278 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-05-09 19:22:49.849
+!MESSAGE Indexed 'calibrator' (2 sources, 52 headers) in 0,58 sec: 1.430 declarations; 1.278 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,15%)

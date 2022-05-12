@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\PFC\Nexys3_v010\workspace\Nexys3_v010_hw_platform\system_bd.bmm" key="Nexys3_v010_hw_platform-bmmFile"/>
+	<item value="C:\PFC\Nexys3_v010\workspace\Nexys3_v010_hw_platform\system.bit" key="Nexys3_v010_hw_platform-bitFile"/>
+	<item value="bootloop" key="Nexys3_v010_hw_platform-microblaze_0-initElf"/>
+</section>

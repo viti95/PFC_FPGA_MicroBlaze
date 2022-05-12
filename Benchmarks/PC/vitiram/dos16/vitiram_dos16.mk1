@@ -1,0 +1,9 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\vitiram\dos16\vitiram_dos16.exe : .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitiram\dos16
+ @%write vitiram_dos16.lk1 
+ @%append vitiram_dos16.lk1 
+ *wlink name vitiram_dos16 d all sys dos op m op maxe=25 op q op symf @vitir&
+am_dos16.lk1
+

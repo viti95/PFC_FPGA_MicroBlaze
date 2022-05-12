@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vitijumps/src/whetstone.c&apos; to &apos;vitijumps.c&apos;" description="Rename resource &apos;whetstone.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/whetstone.c" name="vitijumps.c" stamp="1336304099278" updateReferences="true"/>
+</session>

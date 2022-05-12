@@ -1,0 +1,385 @@
+
+**** Build of configuration Release for project lmbench ****
+
+make all 
+Building target: lmbench.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../xilkernel_bsp_0/microblaze_0/lib -mcpu=v8.20.a -mxl-soft-mul -o"lmbench.elf"  ./src/busy.o ./src/bw_file_rd.o ./src/bw_mem.o ./src/bw_pipe.o ./src/cache.o ./src/clock.o ./src/enough.o ./src/flushdisk.o ./src/getopt.o ./src/lat_dram_page.o ./src/lat_mem_rd.o ./src/lat_ops.o ./src/lat_proc.o ./src/lat_rand.o ./src/lat_select.o ./src/lat_syscall.o ./src/lib_debug.o ./src/lib_mem.o ./src/lib_sched.o ./src/lib_stats.o ./src/lib_timing.o ./src/line.o ./src/loop_o.o ./src/memsize.o ./src/mhz.o ./src/msleep.o ./src/par_mem.o ./src/platform.o ./src/rhttp.o ./src/timing_o.o ./src/tlb.o ./src/vitijumps.o   -lxilkernel
+./src/bw_file_rd.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Disabling relaxation: it will not work with multiple definitions
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 36 in ./src/busy.o to 856 in ./src/bw_file_rd.o
+./src/bw_mem.o: In function `cleanup':
+: multiple definition of `cleanup'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `cleanup' changed from 100 in ./src/bw_file_rd.o to 88 in ./src/bw_mem.o
+./src/bw_mem.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 856 in ./src/busy.o to 1252 in ./src/bw_mem.o
+./src/bw_mem.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/bw_pipe.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 1252 in ./src/busy.o to 692 in ./src/bw_pipe.o
+./src/bw_pipe.o: In function `initialize':
+: multiple definition of `initialize'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `initialize' changed from 276 in ./src/bw_file_rd.o to 528 in ./src/bw_pipe.o
+./src/bw_pipe.o: In function `cleanup':
+: multiple definition of `cleanup'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `cleanup' changed from 88 in ./src/bw_file_rd.o to 116 in ./src/bw_pipe.o
+./src/bw_pipe.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/cache.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 692 in ./src/busy.o to 2544 in ./src/cache.o
+./src/cache.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/clock.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 2544 in ./src/busy.o to 276 in ./src/clock.o
+./src/clock.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/enough.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 276 in ./src/busy.o to 96 in ./src/enough.o
+./src/lat_dram_page.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 96 in ./src/busy.o to 1868 in ./src/lat_dram_page.o
+./src/lat_dram_page.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/lat_mem_rd.o: In function `loads':
+: multiple definition of `loads'
+./src/lat_dram_page.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `loads' changed from 720 in ./src/lat_dram_page.o to 940 in ./src/lat_mem_rd.o
+./src/lat_mem_rd.o: In function `benchmark_loads':
+: multiple definition of `benchmark_loads'
+./src/lat_dram_page.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `benchmark_loads' changed from 556 in ./src/lat_dram_page.o to 572 in ./src/lat_mem_rd.o
+./src/lat_mem_rd.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 1868 in ./src/busy.o to 964 in ./src/lat_mem_rd.o
+./src/lat_mem_rd.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/lat_ops.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 964 in ./src/busy.o to 5360 in ./src/lat_ops.o
+./src/lat_ops.o: In function `cleanup':
+: multiple definition of `cleanup'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `cleanup' changed from 116 in ./src/bw_file_rd.o to 48 in ./src/lat_ops.o
+./src/lat_ops.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/lat_proc.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 5360 in ./src/busy.o to 832 in ./src/lat_proc.o
+./src/lat_proc.o: In function `cleanup':
+: multiple definition of `cleanup'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `cleanup' changed from 48 in ./src/bw_file_rd.o to 120 in ./src/lat_proc.o
+./src/lat_proc.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/lat_rand.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 832 in ./src/busy.o to 256 in ./src/lat_rand.o
+./src/lat_rand.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/lat_select.o: In function `cleanup':
+: multiple definition of `cleanup'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `cleanup' changed from 120 in ./src/bw_file_rd.o to 204 in ./src/lat_select.o
+./src/lat_select.o: In function `initialize':
+: multiple definition of `initialize'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `initialize' changed from 528 in ./src/bw_file_rd.o to 408 in ./src/lat_select.o
+./src/lat_select.o: In function `doit':
+: multiple definition of `doit'
+./src/bw_file_rd.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `doit' changed from 168 in ./src/bw_file_rd.o to 152 in ./src/lat_select.o
+./src/lat_select.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 256 in ./src/busy.o to 760 in ./src/lat_select.o
+./src/lat_select.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/lat_syscall.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 760 in ./src/busy.o to 1328 in ./src/lat_syscall.o
+./src/lat_syscall.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/line.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 1328 in ./src/busy.o to 408 in ./src/line.o
+./src/line.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/loop_o.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 408 in ./src/busy.o to 60 in ./src/loop_o.o
+./src/memsize.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 60 in ./src/busy.o to 592 in ./src/memsize.o
+./src/memsize.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/mhz.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 592 in ./src/busy.o to 2164 in ./src/mhz.o
+./src/mhz.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/msleep.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 2164 in ./src/busy.o to 172 in ./src/msleep.o
+./src/par_mem.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 172 in ./src/busy.o to 556 in ./src/par_mem.o
+./src/par_mem.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/rhttp.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 556 in ./src/busy.o to 760 in ./src/rhttp.o
+./src/rhttp.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/timing_o.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 760 in ./src/busy.o to 76 in ./src/timing_o.o
+./src/tlb.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 76 in ./src/busy.o to 576 in ./src/tlb.o
+./src/tlb.o:(.data+0x0): multiple definition of `id'
+./src/bw_file_rd.o:(.data+0x0): first defined here
+./src/vitijumps.o: In function `main':
+: multiple definition of `main'
+./src/busy.o:: first defined here
+c:\xilinx\13.3\ise_ds\edk\gnu\microblaze\nt64\bin\..\lib\gcc\microblaze-xilinx-elf\4.1.2\..\..\..\..\microblaze-xilinx-elf\bin\ld.exe: Warning: size of symbol `main' changed from 576 in ./src/busy.o to 92 in ./src/vitijumps.o
+./src/busy.o: In function `main':
+: undefined reference to `nice'
+./src/busy.o: In function `main':
+: undefined reference to `getppid'
+./src/bw_pipe.o: In function `cleanup':
+: undefined reference to `waitpid'
+./src/bw_pipe.o: In function `initialize':
+: undefined reference to `pipe'
+./src/bw_pipe.o: In function `initialize':
+: undefined reference to `fork'
+./src/bw_pipe.o: In function `initialize':
+: undefined reference to `getpagesize'
+./src/bw_pipe.o: In function `initialize':
+: undefined reference to `getpagesize'
+./src/cache.o: In function `check_memory':
+: undefined reference to `getpagesize'
+./src/cache.o: In function `measure':
+: undefined reference to `getpagesize'
+./src/cache.o: In function `measure':
+: undefined reference to `getpagesize'
+./src/cache.o:: more undefined references to `getpagesize' follow
+./src/clock.o: In function `main':
+: undefined reference to `compute_enough'
+./src/clock.o: In function `main':
+: undefined reference to `timing_overhead'
+./src/clock.o: In function `main':
+: undefined reference to `loop_overhead'
+./src/lat_dram_page.o: In function `main':
+: undefined reference to `getpagesize'
+./src/lat_mem_rd.o: In function `loads':
+: undefined reference to `getpagesize'
+./src/lat_proc.o: In function `do_fork':
+: undefined reference to `fork'
+./src/lat_proc.o: In function `do_fork':
+: undefined reference to `waitpid'
+./src/lat_proc.o: In function `do_forkexec':
+: undefined reference to `fork'
+./src/lat_proc.o: In function `do_forkexec':
+: undefined reference to `execve'
+./src/lat_proc.o: In function `do_forkexec':
+: undefined reference to `waitpid'
+./src/lat_proc.o: In function `do_shell':
+: undefined reference to `fork'
+./src/lat_proc.o: In function `do_shell':
+: undefined reference to `execlp'
+./src/lat_proc.o: In function `do_shell':
+: undefined reference to `waitpid'
+./src/lat_proc.o: In function `cleanup':
+: undefined reference to `waitpid'
+./src/lat_select.o: In function `initialize':
+: undefined reference to `dup'
+./src/lat_select.o: In function `doit':
+: undefined reference to `select'
+./src/lat_select.o: In function `open_socket':
+: undefined reference to `tcp_connect'
+./src/lat_select.o: In function `server':
+: undefined reference to `tcp_server'
+./src/lat_select.o: In function `server':
+: undefined reference to `fork'
+./src/lat_select.o: In function `server':
+: undefined reference to `tcp_accept'
+./src/lat_select.o: In function `server':
+: undefined reference to `getppid'
+./src/lat_select.o: In function `main':
+: undefined reference to `waitpid'
+./src/lat_syscall.o: In function `do_getppid':
+: undefined reference to `getppid'
+./src/lib_debug.o: In function `print_mem':
+: undefined reference to `getpagesize'
+./src/lib_mem.o: In function `tlb_initialize':
+: undefined reference to `getppid'
+./src/lib_mem.o: In function `line_find':
+: undefined reference to `getpagesize'
+./src/lib_sched.o: In function `sched_ncpus':
+: undefined reference to `sysconf'
+./src/lib_sched.o: In function `reverse_bits':
+: undefined reference to `sysconf'
+./src/lib_sched.o: In function `handle_scheduler':
+: undefined reference to `sysconf'
+./src/lib_sched.o: In function `handle_scheduler':
+: undefined reference to `sysconf'
+./src/lib_sched.o: In function `handle_scheduler':
+: undefined reference to `sysconf'
+./src/lib_timing.o: In function `cp':
+: undefined reference to `fsync'
+./src/lib_timing.o: In function `permutation':
+: undefined reference to `getppid'
+./src/lib_timing.o: In function `touch':
+: undefined reference to `getpagesize'
+./src/lib_timing.o: In function `Now':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `now':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `start':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `start':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `sigchld_wait_handler':
+: undefined reference to `wait'
+./src/lib_timing.o: In function `Delta':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `delta':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `stop':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `stop':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `time_N':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o:: more undefined references to `gettimeofday' follow
+./src/lib_timing.o: In function `benchmp_parent':
+: undefined reference to `waitpid'
+./src/lib_timing.o: In function `benchmp_parent':
+: undefined reference to `select'
+./src/lib_timing.o: In function `benchmp_parent':
+: undefined reference to `select'
+./src/lib_timing.o: In function `benchmp_parent':
+: undefined reference to `select'
+./src/lib_timing.o: In function `benchmp_parent':
+: undefined reference to `select'
+./src/lib_timing.o: In function `l_overhead':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `l_overhead':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `l_overhead':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `l_overhead':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `t_overhead':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o:: more undefined references to `gettimeofday' follow
+./src/lib_timing.o: In function `benchmp_interval':
+: undefined reference to `getppid'
+./src/lib_timing.o: In function `benchmp_interval':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `benchmp_interval':
+: undefined reference to `select'
+./src/lib_timing.o: In function `benchmp_interval':
+: undefined reference to `gettimeofday'
+./src/lib_timing.o: In function `benchmp_interval':
+: undefined reference to `getppid'
+./src/lib_timing.o: In function `benchmp_interval':
+: undefined reference to `select'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `pipe'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `pipe'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `pipe'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `pipe'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `fork'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `alarm'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `waitpid'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `alarm'
+./src/lib_timing.o: In function `benchmp':
+: undefined reference to `waitpid'
+./src/line.o: In function `main':
+: undefined reference to `getpagesize'
+./src/memsize.o: In function `clear_alarm':
+: undefined reference to `setitimer'
+./src/memsize.o: In function `set_alarm':
+: undefined reference to `sigaction'
+./src/memsize.o: In function `set_alarm':
+: undefined reference to `setitimer'
+./src/memsize.o: In function `test_malloc':
+: undefined reference to `pipe'
+./src/memsize.o: In function `test_malloc':
+: undefined reference to `fork'
+./src/memsize.o: In function `test_malloc':
+: undefined reference to `wait'
+./src/memsize.o: In function `timeit':
+: undefined reference to `getpagesize'
+./src/memsize.o: In function `timeit':
+: undefined reference to `sigaction'
+./src/memsize.o: In function `timeit':
+: undefined reference to `setitimer'
+./src/memsize.o: In function `timeit':
+: undefined reference to `setitimer'
+./src/memsize.o: In function `timeit':
+: undefined reference to `sigaction'
+./src/memsize.o: In function `timeit':
+: undefined reference to `setitimer'
+./src/memsize.o: In function `timeit':
+: undefined reference to `setitimer'
+./src/msleep.o: In function `main':
+: undefined reference to `select'
+./src/par_mem.o: In function `main':
+: undefined reference to `getpagesize'
+./src/par_mem.o: In function `main':
+: undefined reference to `getpagesize'
+./src/rhttp.o: In function `main':
+: undefined reference to `fork'
+./src/rhttp.o: In function `main':
+: undefined reference to `wait'
+./src/rhttp.o: In function `main':
+: undefined reference to `creat'
+./src/rhttp.o: In function `main':
+: undefined reference to `dup'
+./src/rhttp.o: In function `main':
+: undefined reference to `execvp'
+./src/tlb.o: In function `main':
+: undefined reference to `getpagesize'
+./src/tlb.o: In function `main':
+: undefined reference to `getpagesize'
+collect2: ld returned 1 exit status
+make: *** [lmbench.elf] Error 1

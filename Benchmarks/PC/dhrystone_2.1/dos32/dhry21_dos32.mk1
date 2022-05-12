@@ -1,0 +1,25 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\dhrystone_2.1\dos32\dhry_1.obj : C:\PFC\OpenWatcom\dhrysto&
+ne_2.1\src\dhry_1.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\dos32
+ *wcc386 ..\src\dhry_1.c -i="C:\WATCOM/h" -w4 -e25 -zq -otexan -ob -ol -oc -&
+or -oh -om -d1 -6r -bt=dos -fo=.obj -mf
+
+C:\PFC\OpenWatcom\dhrystone_2.1\dos32\dhry_2.obj : C:\PFC\OpenWatcom\dhrysto&
+ne_2.1\src\dhry_2.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\dos32
+ *wcc386 ..\src\dhry_2.c -i="C:\WATCOM/h" -w4 -e25 -zq -otexan -ob -ol -oc -&
+or -oh -om -d1 -6r -bt=dos -fo=.obj -mf
+
+C:\PFC\OpenWatcom\dhrystone_2.1\dos32\dhry21_dos32.exe : C:\PFC\OpenWatcom\d&
+hrystone_2.1\dos32\dhry_1.obj C:\PFC\OpenWatcom\dhrystone_2.1\dos32\dhry_2.o&
+bj C:\PFC\OpenWatcom\dhrystone_2.1\src\dhry.h .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\dos32
+ @%write dhry21_dos32.lk1 FIL dhry_1.obj,dhry_2.obj
+ @%append dhry21_dos32.lk1 
+ *wlink name dhry21_dos32 sys dos4g op m op maxe=25 op q op symf @dhry21_dos&
+32.lk1
+

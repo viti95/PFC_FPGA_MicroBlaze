@@ -1,0 +1,24 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\whetstone\winnt\whetstone.obj : C:\PFC\OpenWatcom\whetston&
+e\src\whetstone.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\whetstone\winnt
+ *wcc386 ..\src\whetstone.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -ot&
+exan -d1 -6r -bt=nt -fo=.obj -mf
+
+C:\PFC\OpenWatcom\whetstone\winnt\whetstone_winnt.exe : C:\PFC\OpenWatcom\wh&
+etstone\winnt\whetstone.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\whetstone\winnt
+ @%write whetstone_winnt.lk1 FIL whetstone.obj
+ @%append whetstone_winnt.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b whetstone_winnt.imp 
+ @%append whetstone_winnt.lk1 LIBR whetstone_winnt.imp
+!endif
+!ifneq BLANK ""
+ @%append whetstone_winnt.lk1 
+!endif
+ *wlink name whetstone_winnt sys nt op m op maxe=25 op q op symf @whetstone_&
+winnt.lk1
+

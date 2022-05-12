@@ -1,0 +1,9 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\dhrystone_2.1\dos16\dhry21_dos16.exe : .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\dos16
+ @%write dhry21_dos16.lk1 
+ @%append dhry21_dos16.lk1 
+ *wlink name dhry21_dos16 d all sys dos op m op maxe=25 op q op symf @dhry21&
+_dos16.lk1
+

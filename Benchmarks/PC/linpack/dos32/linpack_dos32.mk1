@@ -1,0 +1,17 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\linpack\dos32\linpack.obj : C:\PFC\OpenWatcom\linpack\src\&
+linpack.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\linpack\dos32
+ *wcc386 ..\src\linpack.c -i="C:\WATCOM/h" -w4 -e25 -zq -otexan -ob -ol -oc &
+-or -oh -om -d1 -6r -bt=dos -fo=.obj -mf
+
+C:\PFC\OpenWatcom\linpack\dos32\linpack_dos32.exe : C:\PFC\OpenWatcom\linpac&
+k\dos32\linpack.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\linpack\dos32
+ @%write linpack_dos32.lk1 FIL linpack.obj
+ @%append linpack_dos32.lk1 
+ *wlink name linpack_dos32 sys dos4g op m op maxe=25 op q op symf @linpack_d&
+os32.lk1
+

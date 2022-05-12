@@ -1,0 +1,17 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\vitijumps\dos32\vitijumps.obj : C:\PFC\OpenWatcom\vitijump&
+s\src\vitijumps.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitijumps\dos32
+ *wcc386 ..\src\vitijumps.c -i="C:\WATCOM/h" -w4 -e25 -zq -otexan -ob -ol -o&
+c -or -oh -om -d1 -6r -bt=dos -fo=.obj -mf
+
+C:\PFC\OpenWatcom\vitijumps\dos32\vitijumps_dos32.exe : C:\PFC\OpenWatcom\vi&
+tijumps\dos32\vitijumps.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitijumps\dos32
+ @%write vitijumps_dos32.lk1 FIL vitijumps.obj
+ @%append vitijumps_dos32.lk1 
+ *wlink name vitijumps_dos32 sys dos4g op m op maxe=25 op q op symf @vitijum&
+ps_dos32.lk1
+

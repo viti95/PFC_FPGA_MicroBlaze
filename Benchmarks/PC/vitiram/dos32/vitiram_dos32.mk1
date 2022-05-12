@@ -1,0 +1,17 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\vitiram\dos32\VitiRAM.obj : C:\PFC\OpenWatcom\vitiram\src\&
+VitiRAM.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitiram\dos32
+ *wcc386 ..\src\VitiRAM.c -i="C:\WATCOM/h" -w4 -e25 -zq -otexan -ob -ol -oc &
+-or -oh -om -d1 -6r -bt=dos -fo=.obj -mf
+
+C:\PFC\OpenWatcom\vitiram\dos32\vitiram_dos32.exe : C:\PFC\OpenWatcom\vitira&
+m\dos32\VitiRAM.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitiram\dos32
+ @%write vitiram_dos32.lk1 FIL VitiRAM.obj
+ @%append vitiram_dos32.lk1 
+ *wlink name vitiram_dos32 sys dos4g op m op maxe=25 op q op symf @vitiram_d&
+os32.lk1
+

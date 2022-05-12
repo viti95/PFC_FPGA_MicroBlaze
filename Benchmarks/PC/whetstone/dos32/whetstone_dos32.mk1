@@ -1,0 +1,17 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\whetstone\dos32\whetstone.obj : C:\PFC\OpenWatcom\whetston&
+e\src\whetstone.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\whetstone\dos32
+ *wcc386 ..\src\whetstone.c -i="C:\WATCOM/h" -w4 -e25 -zq -otexan -ob -ol -o&
+c -or -oh -om -d1 -6r -bt=dos -fo=.obj -mf
+
+C:\PFC\OpenWatcom\whetstone\dos32\whetstone_dos32.exe : C:\PFC\OpenWatcom\wh&
+etstone\dos32\whetstone.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\whetstone\dos32
+ @%write whetstone_dos32.lk1 FIL whetstone.obj
+ @%append whetstone_dos32.lk1 
+ *wlink name whetstone_dos32 sys dos4g op m op maxe=25 op q op symf @whetsto&
+ne_dos32.lk1
+

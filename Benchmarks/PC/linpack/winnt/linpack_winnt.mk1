@@ -1,0 +1,24 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\linpack\winnt\linpack.obj : C:\PFC\OpenWatcom\linpack\src\&
+linpack.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\linpack\winnt
+ *wcc386 ..\src\linpack.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -otex&
+an -d1 -6r -bt=nt -fo=.obj -mf
+
+C:\PFC\OpenWatcom\linpack\winnt\linpack_winnt.exe : C:\PFC\OpenWatcom\linpac&
+k\winnt\linpack.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\linpack\winnt
+ @%write linpack_winnt.lk1 FIL linpack.obj
+ @%append linpack_winnt.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b linpack_winnt.imp 
+ @%append linpack_winnt.lk1 LIBR linpack_winnt.imp
+!endif
+!ifneq BLANK ""
+ @%append linpack_winnt.lk1 
+!endif
+ *wlink name linpack_winnt sys nt op m op maxe=25 op q op symf @linpack_winn&
+t.lk1
+

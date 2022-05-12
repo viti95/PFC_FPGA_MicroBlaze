@@ -1,0 +1,33 @@
+
+**** Build of configuration Release for project whetstone ****
+
+make all 
+Building file: ../src/whetstone.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O3 -c -fmessage-length=0 -D __XMK__ -I../../xilkernel_bsp_0/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.20.a -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -MMD -MP -MF"src/whetstone.d" -MT"src/whetstone.d" -o"src/whetstone.o" "../src/whetstone.c"
+Finished building: ../src/whetstone.c
+' '
+Building target: whetstone.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../xilkernel_bsp_0/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.20.a -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -o"whetstone.elf"  ./src/platform.o ./src/whetstone.o   -lxilkernel
+Finished building target: whetstone.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size whetstone.elf  |tee "whetstone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92068	   1472	  46916	 140456	  224a8	whetstone.elf
+Finished building: whetstone.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck whetstone.elf -hw ../../Nexys3_v027_hw_platform/system.xml -pe microblaze_0  |tee "whetstone.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Nexys3_v027_hw_platform/system.xml -pe
+microblaze_0 whetstone.elf 
+
+ELF file	: whetstone.elf
+elfcheck passed.
+Finished building: whetstone.elf.elfcheck
+' '

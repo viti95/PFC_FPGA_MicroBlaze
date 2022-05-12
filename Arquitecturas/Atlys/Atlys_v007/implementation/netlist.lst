@@ -1,0 +1,21 @@
+C:\PFC\Atlys_v007\implementation\system.ngc 1341588623
+C:/PFC/Atlys_v007/implementation/dip_switches_8bits_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/push_buttons_5bits_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/rs232_uart_1_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/clock_generator_0_wrapper.ngc 1341588569
+C:/PFC/Atlys_v007/implementation/proc_sys_reset_0_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/mcb_ddr2_wrapper.ngc 1341588561
+C:/PFC/Atlys_v007/implementation/microblaze_0_wrapper.ngc 1341588553
+C:/PFC/Atlys_v007/implementation/mb_plb_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/ilmb_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/dlmb_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/dlmb_cntlr_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/ilmb_cntlr_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/leds_8bits_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/ps2_keyboard_mouse_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/digilent_quadspi_cntlr_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/xps_timer_0_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/mdm_0_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/xps_intc_0_wrapper.ngc 1341588304
+C:/PFC/Atlys_v007/implementation/lmb_bram_wrapper.ngc 1341588304
+OK

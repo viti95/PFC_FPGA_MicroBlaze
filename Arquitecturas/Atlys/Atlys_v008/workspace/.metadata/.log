@@ -1,0 +1,24 @@
+!SESSION 2012-07-07 14:02:01.666 -----------------------------------------------
+eclipse.buildId=Release 13.3 Build SDK_O.76xd
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-07-07 14:04:06.274
+!MESSAGE Indexed 'xilkernel_bsp_0' (0 sources, 8 headers) in 0,40 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-07-07 14:06:42.603
+!MESSAGE Indexed 'linpack' (2 sources, 58 headers) in 1,94 sec: 2.455 declarations; 3.168 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,07%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-07-07 14:06:43.327
+!MESSAGE Indexed 'whetstone' (2 sources, 55 headers) in 0,68 sec: 2.022 declarations; 2.015 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-07-07 14:06:44.274
+!MESSAGE Indexed 'dhrystone_2.1' (3 sources, 58 headers) in 0,92 sec: 2.046 declarations; 1.967 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,10%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-07-07 14:06:44.966
+!MESSAGE Indexed 'vitiram' (2 sources, 57 headers) in 0,62 sec: 1.947 declarations; 1.773 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,11%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-07-07 14:06:45.880
+!MESSAGE Indexed 'vitijumps' (2 sources, 52 headers) in 0,61 sec: 1.442 declarations; 1.370 references; 3 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,14%)

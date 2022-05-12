@@ -1,0 +1,25 @@
+C:\PFC\Nexys3_v019\implementation\system.ngc 1332595947
+C:/PFC/Nexys3_v019/implementation/dip_switches_8bits_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/push_buttons_4bits_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/rs232_uart_1_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/digilent_usb_epp_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/clock_generator_0_wrapper.ngc 1332595901
+C:/PFC/Nexys3_v019/implementation/proc_sys_reset_0_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/microblaze_0_wrapper.ngc 1332595895
+C:/PFC/Nexys3_v019/implementation/mb_plb_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/ilmb_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/dlmb_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/dlmb_cntlr_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/ilmb_cntlr_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/leds_8bits_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/ps2_mouse_keyboard_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/micron_ram_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/numonyx_pcm_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/digilent_quadspi_cntlr_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/digilent_sevseg_disp_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/xps_timer_0_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/mdm_0_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/xps_intc_0_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/lmb_bram_wrapper.ngc 1332595728
+C:/PFC/Nexys3_v019/implementation/mem_bus_mux_0_wrapper.ngc 1332595728
+OK

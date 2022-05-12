@@ -1,0 +1,49 @@
+make -k all 
+libgen -hw ../Nexys3_v011_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Nexys3_v011_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+WARNING:EDK - INFO:Security:71 - If a license for part 'xc6slx16' is available,
+   it will be possible to use 'SDK_TDP' instead of 'SDK'.
+   INFO:Security:66 - Your license for 'SDK' is for evaluation use only.
+   WARNING:Security:42 - Your license support version '2012.03' for SDK expires
+   in 7 days after which you will not qualify for Xilinx software updates or new
+   releases.
+
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-multiply-high -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.20.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-multiply-high -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.20.a  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone";
+"Compiling common"
+mb-ar: creating ./libsyscall.a
+mb-ar: creating ./libxilkernel.a
+"Compiling xilkernel"
+"Compiling gpio"
+"Compiling ps2"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'

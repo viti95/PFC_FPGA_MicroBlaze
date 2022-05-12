@@ -1,0 +1,9 @@
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Nexys3_v001_hw_platform/system.xml -pe
+microblaze_0 dhrystone_2.1.elf 
+
+ELF file	: dhrystone_2.1.elf
+elfcheck passed.

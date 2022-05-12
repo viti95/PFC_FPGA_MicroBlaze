@@ -1,0 +1,26 @@
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Atlys_v008_hw_platform/system.xml -pe
+microblaze_0 dhrystone_2.1.elf 
+
+ELF file	: dhrystone_2.1.elf
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0x85018E78 - 0x85019E77)
+	Section .heap (0x85017E74 - 0x85018E77)
+	Section .bss (0x85012058 - 0x85017E73)
+	Section .jcr (0x85012054 - 0x85012057)
+	Section .eh_frame (0x85012050 - 0x85012053)
+	Section .data (0x85011A88 - 0x8501204F)
+	Section .sdata2 (0x85011A84 - 0x85011A87)
+	Section .rodata (0x85010D78 - 0x85011A83)
+	Section .dtors (0x85010D70 - 0x85010D77)
+	Section .ctors (0x85010D68 - 0x85010D6F)
+	Section .fini (0x85010D48 - 0x85010D67)
+	Section .init (0x85010D08 - 0x85010D47)
+	Section .text (0x85000000 - 0x85010D07)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.

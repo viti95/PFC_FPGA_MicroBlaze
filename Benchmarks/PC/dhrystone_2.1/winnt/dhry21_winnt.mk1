@@ -1,0 +1,32 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\dhrystone_2.1\winnt\dhry_1.obj : C:\PFC\OpenWatcom\dhrysto&
+ne_2.1\src\dhry_1.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\winnt
+ *wcc386 ..\src\dhry_1.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -otexa&
+n -d1 -6r -bt=nt -fo=.obj -mf
+
+C:\PFC\OpenWatcom\dhrystone_2.1\winnt\dhry_2.obj : C:\PFC\OpenWatcom\dhrysto&
+ne_2.1\src\dhry_2.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\winnt
+ *wcc386 ..\src\dhry_2.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -otexa&
+n -d1 -6r -bt=nt -fo=.obj -mf
+
+C:\PFC\OpenWatcom\dhrystone_2.1\winnt\dhry21_winnt.exe : C:\PFC\OpenWatcom\d&
+hrystone_2.1\winnt\dhry_1.obj C:\PFC\OpenWatcom\dhrystone_2.1\winnt\dhry_2.o&
+bj C:\PFC\OpenWatcom\dhrystone_2.1\src\dhry.h .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\dhrystone_2.1\winnt
+ @%write dhry21_winnt.lk1 FIL dhry_1.obj,dhry_2.obj
+ @%append dhry21_winnt.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b dhry21_winnt.imp 
+ @%append dhry21_winnt.lk1 LIBR dhry21_winnt.imp
+!endif
+!ifneq BLANK ""
+ @%append dhry21_winnt.lk1 
+!endif
+ *wlink name dhry21_winnt sys nt op m op maxe=25 op q op symf @dhry21_winnt.&
+lk1
+

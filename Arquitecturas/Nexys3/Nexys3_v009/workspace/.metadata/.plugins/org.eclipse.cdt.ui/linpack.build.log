@@ -1,0 +1,35 @@
+
+**** Build of configuration Release for project linpack ****
+
+make all 
+Building file: ../src/linpack.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O3 -c -fmessage-length=0 -D __XMK__ -I../../xilkernel_bsp_0/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.20.a -mno-xl-soft-mul -mxl-multiply-high -mhard-float -MMD -MP -MF"src/linpack.d" -MT"src/linpack.d" -o"src/linpack.o" "../src/linpack.c"
+../src/linpack.c: In function 'idamax':
+../src/linpack.c:562: warning: 'itemp' may be used uninitialized in this function
+Finished building: ../src/linpack.c
+' '
+Building target: linpack.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../xilkernel_bsp_0/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.20.a -mno-xl-soft-mul -mxl-multiply-high -mhard-float -o"linpack.elf"  ./src/linpack.o ./src/platform.o   -lxilkernel
+Finished building target: linpack.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size linpack.elf  |tee "linpack.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82628	   1472	 370364	 454464	  6ef40	linpack.elf
+Finished building: linpack.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck linpack.elf -hw ../../Nexys3_v009_hw_platform/system.xml -pe microblaze_0  |tee "linpack.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Nexys3_v009_hw_platform/system.xml -pe
+microblaze_0 linpack.elf 
+
+ELF file	: linpack.elf
+elfcheck passed.
+Finished building: linpack.elf.elfcheck
+' '

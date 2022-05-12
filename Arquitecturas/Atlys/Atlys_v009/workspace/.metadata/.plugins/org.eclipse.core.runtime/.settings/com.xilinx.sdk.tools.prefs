@@ -1,0 +1,14 @@
+#Sat Jul 07 16:19:41 CEST 2012
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Stack-size=2048
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sbss=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.data=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Stack=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.bss=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sbss2=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sdata2=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sdata=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.rodata=MCB_DDR2_MPMC_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Heap-size=2048
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Heap=MCB_DDR2_MPMC_BASEADDR
+eclipse.preferences.version=1
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.text=MCB_DDR2_MPMC_BASEADDR

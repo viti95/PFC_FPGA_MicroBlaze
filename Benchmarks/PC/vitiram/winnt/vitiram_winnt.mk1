@@ -1,0 +1,24 @@
+!define BLANK ""
+C:\PFC\OpenWatcom\vitiram\winnt\VitiRAM.obj : C:\PFC\OpenWatcom\vitiram\src\&
+VitiRAM.c .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitiram\winnt
+ *wcc386 ..\src\VitiRAM.c -i="C:\WATCOM/h;C:\WATCOM/h/nt" -w4 -e25 -zq -otex&
+an -ob -ol -oc -or -oh -om -d1 -6r -bt=nt -fo=.obj -mf
+
+C:\PFC\OpenWatcom\vitiram\winnt\vitiram_winnt.exe : C:\PFC\OpenWatcom\vitira&
+m\winnt\VitiRAM.obj .AUTODEPEND
+ @C:
+ cd C:\PFC\OpenWatcom\vitiram\winnt
+ @%write vitiram_winnt.lk1 FIL VitiRAM.obj
+ @%append vitiram_winnt.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b vitiram_winnt.imp 
+ @%append vitiram_winnt.lk1 LIBR vitiram_winnt.imp
+!endif
+!ifneq BLANK ""
+ @%append vitiram_winnt.lk1 
+!endif
+ *wlink name vitiram_winnt sys nt op m op maxe=25 op q op symf @vitiram_winn&
+t.lk1
+

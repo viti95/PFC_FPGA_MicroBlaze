@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stream/src/whetstone.c&apos; to &apos;stream.c&apos;" description="Rename resource &apos;whetstone.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/whetstone.c" name="stream.c" stamp="1342768948821" updateReferences="true"/>
+</session>

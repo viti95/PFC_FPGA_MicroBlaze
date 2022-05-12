@@ -1,0 +1,25 @@
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Atlys_v008_hw_platform/system.xml -pe
+microblaze_0 linpack.elf 
+
+ELF file	: linpack.elf
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0x8506B920 - 0x8506F91F)
+	Section .heap (0x85067920 - 0x8506B91F)
+	Section .bss (0x85015268 - 0x8506791F)
+	Section .jcr (0x85015264 - 0x85015267)
+	Section .eh_frame (0x85015260 - 0x85015263)
+	Section .data (0x85014CB8 - 0x8501525F)
+	Section .rodata (0x85013EFC - 0x85014CB7)
+	Section .dtors (0x85013EF4 - 0x85013EFB)
+	Section .ctors (0x85013EEC - 0x85013EF3)
+	Section .fini (0x85013ECC - 0x85013EEB)
+	Section .init (0x85013E8C - 0x85013ECB)
+	Section .text (0x85000000 - 0x85013E8B)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.

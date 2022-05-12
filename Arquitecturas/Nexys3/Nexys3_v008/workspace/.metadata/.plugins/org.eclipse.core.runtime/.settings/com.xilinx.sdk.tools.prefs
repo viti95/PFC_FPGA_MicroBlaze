@@ -1,0 +1,14 @@
+#Sun May 06 17:25:11 CEST 2012
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Stack-size=2048
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sbss=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.data=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Stack=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.bss=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sbss2=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sdata2=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.sdata=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.rodata=Micron_RAM_MEM0_BASEADDR
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Heap-size=2048
+com.xilinx.sdk.linkgen.prefs.vitijumps\:Heap=Micron_RAM_MEM0_BASEADDR
+eclipse.preferences.version=1
+com.xilinx.sdk.linkgen.prefs.vitijumps\:.text=Micron_RAM_MEM0_BASEADDR
